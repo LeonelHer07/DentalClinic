@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --radius-shell: 1.75rem;
+  --radius-card: 1rem;
+  --radius-control: 0.7rem;
+}
+
+@layer base {
+  :root {
+    --color-brand-50: #eef5ff;
+    --color-brand-400: #72a8ff;
+    --color-brand-500: #2b7fff;
+    --color-brand-600: #1768d1;
+    --color-brand-700: #0d4fa8;
+    --color-danger: #8b4b47;
+    --color-danger-soft: #f4d8d4;
+    --color-app-bg: #eef2f7;
+    --color-shell: #edf3f8;
+    --color-panel: #ffffff;
+    --color-surface-subtle: #f6f8fb;
+    --color-surface-elevated: #ffffff;
+    --color-input-bg: #ffffff;
+    --color-border-soft: #dce3ed;
+    --color-border-strong: #cbd4e2;
+    --color-text-primary: #172033;
+    --color-text-secondary: #55627a;
+    --color-text-muted: #8a97ab;
+    --color-sidebar-bg: #ffffff;
+    --color-sidebar-text: #203149;
+    --color-sidebar-text-muted: #6b7a90;
+    --color-sidebar-hover-bg: #f3f6fb;
+    --color-sidebar-active-bg: #e6f0ff;
+    --color-sidebar-active-text: #195bb5;
+    --color-sidebar-border: #e1e8f0;
+    --color-sidebar-brand-bg: #f7f9fc;
+    --color-sidebar-footer-bg: #fafbfd;
+    --shadow-shell: 0 18px 45px rgba(15, 23, 42, 0.08);
+    --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.06);
+  }
+
+  [data-theme='dark'] {
+    --color-brand-50: rgba(43, 127, 255, 0.16);
+    --color-brand-400: #72a8ff;
+    --color-brand-500: #3b82f6;
+    --color-brand-600: #2563eb;
+    --color-brand-700: #1d4ed8;
+    --color-danger: #d9a3a0;
+    --color-danger-soft: rgba(181, 94, 88, 0.24);
+    --color-app-bg: #0f1b2b;
+    --color-shell: #152437;
+    --color-panel: #1a2b3d;
+    --color-surface-subtle: #172636;
+    --color-surface-elevated: #203245;
+    --color-input-bg: #223549;
+    --color-border-soft: #283b4f;
+    --color-border-strong: #36506b;
+    --color-text-primary: #ecf3ff;
+    --color-text-secondary: #adc0d8;
+    --color-text-muted: #7d90a8;
+    --color-sidebar-bg: #132436;
+    --color-sidebar-text: #edf4ff;
+    --color-sidebar-text-muted: #9bb0ca;
+    --color-sidebar-hover-bg: rgba(255, 255, 255, 0.05);
+    --color-sidebar-active-bg: #e6f0ff;
+    --color-sidebar-active-text: #173d6d;
+    --color-sidebar-border: #22384b;
+    --color-sidebar-brand-bg: #1b3044;
+    --color-sidebar-footer-bg: #15283a;
+    --shadow-shell: 0 22px 50px rgba(0, 0, 0, 0.28);
+    --shadow-soft: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background: var(--color-app-bg);
+    color: var(--color-text-primary);
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--color-app-bg);
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+}
